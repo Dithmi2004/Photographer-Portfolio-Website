@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <h1>Admin Dashboard</h1>
+            <a href="admin.html" class="logout">Logout</a>
+        </nav>
+
+        <div class="stats">
+            <div class="card">
+                <h2>Pending Bookings</h2>
+                <p id="pending-count">0</p>
+            </div>
+            <div class="card">
+                <h2>Accepted Bookings</h2>
+                <p id="accepted-count">0</p>
+            </div>
+            <div class="card">
+                <h2>Rejected Bookings</h2>
+                <p id="rejected-count">0</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Event Date</th>
+                    <th>Event Type</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="booking-list">
+                <!-- Booking rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+           
+            <div class="footer-column">
+                <h2>Malcolm Lismore Photography</h2>
+                <p>Capturing moments that last a lifetime</p>
+            </div>
+
+           
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Book a Session</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/?lang=en-in"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="footer-bottom"> 2025 Malcolm Lismore Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>

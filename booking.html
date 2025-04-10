@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malcolm Lismore Photography</title>
+    <link href="booking.css" rel="stylesheet" type="text/css">
+    <script src="booking.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <img src="Black Yellow Illustrative Photography Logo.jpg" class="logo">
+            <h1 class="head">Malcolm Lismore <br> Photography</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Book a Session</h1>
+            <p>Schedule your photography session with Malcolm</p>
+        </div>
+    </div>
+
+    <div class="second_part">
+        <div class="book">
+            <h2>Book Your Photography Session</h2>
+            <p>Please fill out the form below to request a booking. Fields marked with an asterisk (*) are required. Once submitted, I'll review your request and confirm availability within 24 hours.</p>
+
+            <form action="booking.php" method="POST" class="bookingForm" id="bookingForm">
+                <label>Full Name *</label>
+                <input type="text" name="full_name" id="name" placeholder="Enter your full name" required>
+
+                <label>Email *</label>
+                <input type="email" name="email" id="email" placeholder="Enter valid email address" required>
+
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter a phone number" required>
+
+                <label>Session Type *</label>
+                <select id="sessionType" name="session_type" required>
+                    <option value="">Select a session type</option>
+                    <option value="portraits">Portraits</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="event">Event Coverage</option>
+                    <option value="commercial">Commercial Photography</option>
+                </select>
+
+                <label>Preferred Date *</label>
+                <input type="date" name="preferred_date" id="date" required>
+
+                <label>Preferred Time *</label>
+                <select id="time" name="preferred_time" required>
+                    <option value="">Select a time</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+
+                <label>Additional Information (Optional)</label>
+                <textarea id="additionalInfo" name="additional_info" placeholder="Tell me more about what you're looking for..."></textarea>
+
+                <button type="submit">Book Session</button>
+            </form>
+
+            <p id="successMessage" style="display:none; color:green;">Booking request submitted!</p>
+        </div>
+    </div>
+
+    <div class="information">
+        <h2>Booking Information</h2>
+        <ul>
+            <li>A 50% non-refundable deposit is required to secure your booking.</li>
+            <li>Rescheduling is available with at least 48 hours notice.</li>
+            <li>Sessions may be rescheduled due to inclement weather at no additional cost.</li>
+            <li>Please arrive 10 minutes before your scheduled time.</li>
+            <li>We will notify you via email whether your booking has been accepted or not.</li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Malcolm Lismore Photography</h2>
+                <p>Capturing moments that last a lifetime</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Book a Session</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://web.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="footer-bottom">2025 Malcolm Lismore Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>
